@@ -36,7 +36,7 @@ const Cards = () => {
               animate={{ opacity: 1, x: 0, y: 0, rotate: 0 }}
               transition={{
                 type: "tween", // could be spring aswell, depends what i want
-                duration: 0.5,
+                duration: 1,
                 stiffness: 80, // higher = faster, snappier only on spring type
                 damping: 15, // higher = slower, more resistance
                 delay: index * 0.1, // how much it delays each card after another
@@ -69,18 +69,25 @@ const Cards = () => {
       </div>
 
       <div className={styles.randomtext}>
-        <p>
-          PROGRAMMER. FUTURE DIGITAL NOMAD WITH A PASSPORT FULL OF AMBITIONS.
-          CHRONIC LEARNER. REMOTE-JOB DREAMER. WRITES CODE, FIXES BUGS, CREATES
-          WORLDS, AND SOMETIMES BREAKS EVERYTHING ON PURPOSE (FOR SCIENCE).
-          GAMING RAISED. AI-CURIOUS. ROBOTICS-INTRIGUED. LOVES BUILDING THINGS
-          THAT MEAN SOMETHING. HAS PROJECTS ACROSS LANGUAGES AND FRAMEWORKS.
-          UNREASONABLE AMOUNTS OF COFFEE. STUDYING. BUILDING. RESTARTING.
-          EXPERIMENTING. ALWAYS MORE TO LEARN. WANTS TO WORK FROM ANY COUNTRY
-          WITH A DECENT WIFI SIGNAL. HUNGRY FOR BETTER CODE, BETTER IDEAS,
-          BETTER LIFE. YOU BETTER KEEP YOUR EYE ON ME BECAUSE THERES SOO MUCH
-          MORE COMING.
-        </p>
+        <motion.div
+          initial={{ y: 100, opacity: 0 }} // start 50px below, invisible
+          animate={{ y: 0, opacity: 1 }} // end at original position, fully visible
+          transition={{ duration: 1, ease: "easeOut", delay: 0.5 }} // delay if you want
+          className={styles.randomtext}
+        >
+          <p>
+            PROGRAMMER. FUTURE DIGITAL NOMAD WITH A PASSPORT FULL OF AMBITIONS.
+            CHRONIC LEARNER. REMOTE-JOB DREAMER. WRITES CODE, FIXES BUGS,
+            CREATES WORLDS, AND SOMETIMES BREAKS EVERYTHING ON PURPOSE (FOR
+            SCIENCE). GAMING RAISED. AI-CURIOUS. ROBOTICS-INTRIGUED. LOVES
+            BUILDING THINGS THAT MEAN SOMETHING. HAS PROJECTS ACROSS LANGUAGES
+            AND FRAMEWORKS. UNREASONABLE AMOUNTS OF COFFEE. STUDYING. BUILDING.
+            RESTARTING. EXPERIMENTING. ALWAYS MORE TO LEARN. WANTS TO WORK FROM
+            ANY COUNTRY WITH A DECENT WIFI SIGNAL. HUNGRY FOR BETTER CODE,
+            BETTER IDEAS, BETTER LIFE. YOU BETTER KEEP YOUR EYE ON ME BECAUSE
+            THERES SOO MUCH MORE COMING.
+          </p>
+        </motion.div>
       </div>
     </div>
   );
