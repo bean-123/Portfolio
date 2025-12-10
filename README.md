@@ -36,6 +36,6 @@ I’m Amy, a passionate programmer exploring web development, AI, and gaming. My
 
 Email: amy.platt@hotmail.com
 
-LinkedIn: linkedin.com/in/amyplatt
+[LinkedIn](https://www.linkedin.com/in/amy-platt-2213a0358/)
 
-GitHub: github.com/amyplatt
+[GitHub](https://github.com/bean-123)
