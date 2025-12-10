@@ -1,0 +1,120 @@
+/* Prevent horizontal scroll globally */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.projectPageContainer {
+  padding: 20px;
+  max-width: 100vw;
+  box-sizing: border-box; /* include padding in width calculation */
+  overflow-x: hidden; /* prevent horizontal scroll */
+}
+
+.pageTitle {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.2s;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 4rem;
+}
+.imageWrapper {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  position: relative; /* make overlay position relative to this */
+}
+
+.projectImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0); /* invisible initially */
+  z-index: 2; /* ensure it’s above the image */
+}
+
+.projectCard:hover .imageOverlay {
+  background-color: rgba(255, 255, 255, 0.212); /* visible on hover */
+}
+
+.cardText {
+  padding-top: 12px;
+}
+
+.cardText h2 {
+  font-weight: 500;
+  color: #333;
+  font-size: 15px;
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+}
+
+.cardText p {
+  font-size: 12px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.techIcons {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.techIcon {
+  width: 20px;
+  height: 20px;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .projectGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .projectGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .projectGrid {
+    grid-template-columns: 1fr;
+  }
+}

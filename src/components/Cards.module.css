@@ -1,0 +1,134 @@
+.cardscontainer {
+  min-height: 93vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cards {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.randomtext {
+  margin-top: 10px;
+  max-width: 700px;
+  font-size: 15px;
+  text-align: justify;
+  color: rgb(58, 57, 57);
+  letter-spacing: 0.5px;
+}
+
+.cardImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover; /* crop nicely if not square */
+  transition: transform 0.2s;
+}
+
+.cards .cardImage:hover {
+  cursor: pointer;
+  transform: scale(1.067);
+}
+
+.hoverBox1 {
+  position: absolute;
+  top: 90px; /* adjust to appear above cards */
+  left: 20%; /* center horizontally relative to container */
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column; /* change to row for side preview */
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  z-index: 10; /* keep on top of other content */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.hoverBox2 {
+  position: absolute;
+  bottom: 40px; /* adjust to appear above cards */
+  left: 15%; /* center horizontally relative to container */
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column; /* change to row for side preview */
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  z-index: 10; /* keep on top of other content */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.hoverBox3 {
+  position: absolute;
+  top: 20px; /* adjust to appear above cards */
+  left: 45%; /* center horizontally relative to container */
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column; /* change to row for side preview */
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  z-index: 10; /* keep on top of other content */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.hoverBox4 {
+  position: absolute;
+  bottom: 20px; /* adjust to appear above cards */
+  right: 25%; /* center horizontally relative to container */
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column; /* change to row for side preview */
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  z-index: 10; /* keep on top of other content */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.hoverBox5 {
+  position: absolute;
+  top: 60px; /* adjust to appear above cards */
+  right: 5%; /* center horizontally relative to container */
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column; /* change to row for side preview */
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  z-index: 10; /* keep on top of other content */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.hoverBox6 {
+  position: absolute;
+  bottom: 120px; /* adjust to appear above cards */
+  right: 0%; /* center horizontally relative to container */
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column; /* change to row for side preview */
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  z-index: 10; /* keep on top of other content */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.hoverTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(33, 33, 33);
+  margin: 8px 0 4px 0;
+  text-align: center;
+}
+
+.hoverBox p {
+  font-size: 16px;
+  color: rgb(58, 57, 57);
+}
+
+.hoverBox img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
