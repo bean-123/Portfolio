@@ -1,9 +1,11 @@
+/* Container */
 .bioContainer {
   display: flex;
   justify-content: space-between;
   width: 100%;
   min-height: 100vh;
   box-sizing: border-box;
+  position: relative;
 }
 
 /* Left column text */
@@ -11,7 +13,8 @@
   flex: 1;
   max-width: 700px;
   padding-left: 10rem;
-  padding-top: 18em;
+  padding-top: 9em;
+  margin-right: 50%; /* leave space for the fixed right column */
 }
 
 .bioTitle {
@@ -31,15 +34,17 @@ span {
   color: #444;
 }
 
-/* Right column draggable images */
+/* Right column fixed images */
 .imageColumn {
-  position: sticky;
-  flex: 1;
+  position: fixed; /* stick to viewport */
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  height: 100vh;
+  pointer-events: none;
 }
 
 .bioPhoto {
@@ -50,30 +55,31 @@ span {
   position: absolute;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   transition: box-shadow 0.2s ease;
+  pointer-events: auto; /* allow dragging */
 }
 
-/* When dragging */
+/* Dragging effect */
 .bioPhoto:active {
   cursor: grabbing;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 }
 
-/* Layered scattered effect */
+/* images */
 .photo1 {
-  top: 8rem;
-  right: 32rem;
+  top: 12rem;
+  right: 36rem;
   rotate: 5deg;
 }
 
 .photo2 {
-  bottom: 18rem;
-  right: 15rem;
+  bottom: 15rem;
+  right: 20rem;
   rotate: -5deg;
 }
 
 .photo3 {
-  top: 15rem;
-  right: 23rem;
+  top: 20rem;
+  right: 28rem;
   rotate: -2deg;
 }
 
@@ -84,13 +90,23 @@ span {
     padding: 2rem 1rem;
   }
 
+  .bioText {
+    margin-right: 0;
+    padding-left: 0;
+    padding-top: 2rem;
+  }
+
   .imageColumn {
-    margin-top: 2rem;
+    position: relative; /* back to normal flow */
+    width: 100%;
     height: 380px;
+    margin-top: 2rem;
+    pointer-events: auto; /* normal behavior */
   }
 
   .bioPhoto {
     width: 180px;
     height: 220px;
+    position: absolute;
   }
 }

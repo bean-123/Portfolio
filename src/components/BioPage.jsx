@@ -11,16 +11,38 @@ const BioPage = () => {
       <div className={styles.bioText}>
         <h1 className={styles.bioTitle}>who am i?</h1>
         <p className={styles.bioParagraph}>
-          I’m a programmer who builds things for the web, breaks things to
-          understand them better, and keeps chasing that remote-job,
-          code-from-anywhere life. I like projects that have personality,
-          interfaces that breathe a little, and tech that feels more like art
-          than machinery.
+          I’m a programmer who builds for the web, breaks things to figure out
+          how they work, and chases that code-from-anywhere life. I’m into
+          projects that have personality, interfaces that breathe a little, and
+          tech that feels more like art than machinery. I get a kick out of
+          making things that are both functional and fun, and I’m always
+          experimenting with new ways to solve problems, learn new skills, and
+          push my creativity.
           <br />
           <br />
-          When I'm not coding, I'm learning, designing, gaming, reorganizing my
-          ideas, or spinning up side projects that grow into something bigger.
-          There's always a next thing waiting.
+          Right now I’m studying at Business College Helsinki, and next year
+          I’ll be diving into Software Engineering at Metropolia University of
+          Applied Sciences. I’m especially drawn to back-end development, but
+          front-end is just as exciting—I love working with React, JavaScript,
+          and Python to create interactive experiences that actually feel alive.
+          My projects range from small experiments to full web apps, each one
+          teaching me something new and helping me get closer to the kind of
+          programmer I want to become.
+          <br />
+          <br />
+          When I’m not coding, I’m usually gaming, designing, reorganizing my
+          ideas, or learning something new that somehow ends up feeding back
+          into my projects. There’s always a next thing waiting, a new library
+          to explore, a new problem to solve, or a small tweak that turns a side
+          project into something much bigger. I’m constantly chasing growth—both
+          in my skills and in the projects I make.
+          <br />
+          <br />
+          I want to keep learning as much as possible, grow as a programmer, and
+          create things that feel alive, personal, and just a little bit
+          unexpected. I love building, experimenting, and improving, and I’m
+          always looking for ways to make code, design, and creativity work
+          together.
           <br />
           <br />
           If you wanna work together, reach me at
