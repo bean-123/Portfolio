@@ -23,7 +23,8 @@ const BioPage = () => {
           There's always a next thing waiting.
           <br />
           <br />
-          If you wanna work together, reach me at amyplatt1995@gmail.com
+          If you wanna work together, reach me at
+          <span> amyplatt1995@gmail.com</span>
         </p>
       </div>
 

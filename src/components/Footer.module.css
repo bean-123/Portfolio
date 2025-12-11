@@ -4,6 +4,7 @@
   justify-content: space-between;
   font-size: 12px;
   color: #4b4a4a;
+  font-family: "Roboto", sans-serif;
 
   /* keep footer at the bottom */
   position: fixed;
@@ -14,17 +15,29 @@
   z-index: 999; /* ensures it's above other content */
 }
 
-.contact ul {
-  list-style: none;
+p {
+  font-size: 20px;
+}
+
+.contact {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-.contact li {
-  cursor: pointer;
+.links {
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
-.contact li:hover {
+.contact a {
+  cursor: pointer;
+  text-decoration: none; /* optional */
+  color: inherit; /* optional, keeps same color as footer */
+}
+
+.contact a:hover {
   color: rgb(190, 133, 125);
 }

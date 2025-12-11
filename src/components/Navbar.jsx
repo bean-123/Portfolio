@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className={styles.navbarcontainer}>
       <div className={styles.sitename}>
         <Link to="/" className={styles.link}>
-          amy platt
+          amy platt —
         </Link>
       </div>
 
