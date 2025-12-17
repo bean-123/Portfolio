@@ -9,7 +9,7 @@ const SingleProjectPage = () => {
   if (!project) return <p>Project not found.</p>;
 
   return (
-    <div style={{ padding: "2rem" }}>
+    <div className={styles.singlepagecontainer}>
       <h1>{project.title}</h1>
       <img
         src={project.cover}
