@@ -10,6 +10,8 @@ import {
   SiTailwindcss,
   SiJavascript,
   SiFirebase,
+  SiHtml5,
+  SiVite,
 } from "react-icons/si";
 
 const techIconsMap = {
@@ -20,6 +22,8 @@ const techIconsMap = {
   Javascript: <SiJavascript title="JavaScript" className={styles.techIcon} />,
   Python: <SiPython title="Python" className={styles.techIcon} />,
   Node: <SiNodedotjs title="Node.js" className={styles.techIcon} />,
+  Html: <SiHtml5 title="HTML5" className={styles.techIcon} />,
+  Vite: <SiVite title="Vite" className={styles.techIcon} />,
 };
 
 const SingleProjectPage = () => {

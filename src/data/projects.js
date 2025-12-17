@@ -2,8 +2,8 @@ import hrapp from "../assets/images/hrapp.png";
 import networking from "../assets/images/networking.png";
 import iptracker from "../assets/images/iptracker.png";
 import pancake from "../assets/images/pancake.png";
-import cat5 from "../assets/images/cat5.jpg";
-import cat6 from "../assets/images/cat6.jpg";
+import socialproof from "../assets/images/socialproof.png";
+import reactPortfolio from "../assets/images/reactPortfolio.png";
 
 const projectData = [
   {
@@ -54,22 +54,23 @@ const projectData = [
   },
   {
     id: 5,
-    title: "Project Five",
-    description: "Short description of Project Five",
-    cover: cat5,
-    hover: cat5,
+    title: "Social Proof",
+    description:
+      "This is my solution to the Social proof section challenge on Frontend Mentor.",
+    cover: socialproof,
+    hover: socialproof,
     featured: true,
-    tech: ["React", "Css", "Javascript"],
+    tech: ["Css", "Html"],
     detailedDescription: "Long description here",
   },
   {
     id: 6,
-    title: "Project Six",
+    title: "Developer Portfolio",
     description: "Short description of Project Six",
-    cover: cat6,
-    hover: cat6,
+    cover: reactPortfolio,
+    hover: reactPortfolio,
     featured: true, // if u wanna show it on the front page
-    tech: ["React", "Tailwind", "Firebase"],
+    tech: ["React", "Tailwind", "Firebase", "Vite"],
     detailedDescription: "Long description here",
   },
   // .... etc
