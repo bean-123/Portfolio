@@ -42,8 +42,8 @@
 
 .hoverBox1 {
   position: absolute;
-  top: 90px; /* adjust to appear above cards */
-  left: 20%; /* center horizontally relative to container */
+  top: 50px; /* adjust to appear above cards */
+  left: 18%; /* center horizontally relative to container */
   transform: translateX(-50%);
   display: flex;
   flex-direction: column; /* change to row for side preview */
@@ -56,7 +56,7 @@
 .hoverBox2 {
   position: absolute;
   bottom: 40px; /* adjust to appear above cards */
-  left: 15%; /* center horizontally relative to container */
+  left: 25%; /* center horizontally relative to container */
   transform: translateX(-50%);
   display: flex;
   flex-direction: column; /* change to row for side preview */
@@ -69,7 +69,7 @@
 .hoverBox3 {
   position: absolute;
   top: 20px; /* adjust to appear above cards */
-  left: 45%; /* center horizontally relative to container */
+  left: 50%; /* center horizontally relative to container */
   transform: translateX(-50%);
   display: flex;
   gap: 10px;
@@ -81,7 +81,7 @@
 .hoverBox4 {
   position: absolute;
   bottom: 20px; /* adjust to appear above cards */
-  right: 25%; /* center horizontally relative to container */
+  right: 15%; /* center horizontally relative to container */
   transform: translateX(-50%);
   display: flex;
   flex-direction: column; /* change to row for side preview */
@@ -133,7 +133,45 @@
   color: #444;
 }
 
-.hoverBox img {
+.hoverBox1 img {
+  width: auto;
+  height: auto;
+  max-width: 500px;
+  max-height: 500px;
+  object-fit: contain; /* ensures full image is visible without cropping */
+}
+
+.hoverBox2 img {
+  width: auto;
+  height: auto;
+  max-width: 450px;
+  max-height: 450px;
+  object-fit: contain; /* ensures full image is visible without cropping */
+}
+
+.hoverBox3 img {
+  width: auto;
+  height: auto;
+  max-width: 650px;
+  max-height: 650px;
+  object-fit: contain; /* ensures full image is visible without cropping */
+}
+
+.hoverBox4 img {
+  width: auto;
+  height: auto;
+  max-width: 450px;
+  max-height: 450px;
+  object-fit: contain; /* ensures full image is visible without cropping */
+}
+
+.hoverBox5 img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.hoverBox6 img {
   width: 300px;
   height: 300px;
   object-fit: cover;

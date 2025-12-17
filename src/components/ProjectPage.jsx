@@ -46,7 +46,7 @@ const ProjectPage = () => {
 
             <div className={styles.cardText}>
               <h2>{proj.title}</h2>
-              <p>{proj.shortDescription || proj.description}</p>
+              <p>{proj.description}</p>
 
               {/* Tech icons row */}
               <div className={styles.techIcons}>
