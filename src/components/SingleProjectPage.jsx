@@ -1,7 +1,8 @@
 import { useParams } from "react-router-dom";
 import projectData from "../data/projects";
 import styles from "./SingleProjectPage.module.css";
-// import some icons from react-icons
+
+// react-icons
 import {
   SiPython,
   SiNodedotjs,
@@ -34,18 +35,57 @@ const SingleProjectPage = () => {
 
   return (
     <div className={styles.singlepagecontainer}>
-      <h1>{project.title}</h1>
-      <img
-        src={project.cover}
-        alt={project.title}
-        className={styles.projectImage}
-      />
-      <p>{project.detailedDescription}</p>
-      {/* you can add more fields like tech stack, link, etc. */}
-      <div className={styles.techStack}>
-        {project.tech.map((tech) => (
-          <div key={tech} className={styles.techIconWrapper}>
-            {techIconsMap[tech] || tech}
+      {/* LEFT COLUMN */}
+      <div className={styles.leftColumn}>
+        <h1>{project.title}</h1>
+
+        <p className={styles.description}>{project.detailedDescription}</p>
+
+        {project.link && (
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.projectLink}
+          >
+            View the project on GitHub
+          </a>
+        )}
+        {project.livelink && (
+          <a
+            href={project.livelink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.projectLink}
+          >
+            View the live site here
+          </a>
+        )}
+
+        <div className={styles.techStack}>
+          {project.tech.map((tech) => (
+            <div key={tech} className={styles.techIconWrapper}>
+              {techIconsMap[tech] || tech}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* RIGHT COLUMN */}
+      <div className={styles.rightColumn}>
+        <img
+          src={project.fullpicture || project.cover}
+          alt={project.title}
+          className={styles.projectImage}
+        />
+        {/* Extra images */}
+        {project.extraImages?.map((img, index) => (
+          <div key={index} className={styles.extraImageWrapper}>
+            <img
+              src={img}
+              alt={`${project.title} ${index + 2}`}
+              className={styles.projectImage}
+            />
           </div>
         ))}
       </div>

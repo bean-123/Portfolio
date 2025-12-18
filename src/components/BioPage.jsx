@@ -46,7 +46,7 @@ const BioPage = () => {
           <br />
           <br />
           If you wanna work together, reach me at
-          <span> amyplatt1995@gmail.com</span>
+          <span> amy.platt@hotmail.com</span>
         </p>
       </div>
 
