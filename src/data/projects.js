@@ -20,7 +20,7 @@ const projectData = [
     hover: hrapp,
     fullpicture: fullHrapp,
     featured: true,
-    tech: ["React", "Tailwind", "Firebase"],
+    tech: ["React", "Tailwind"],
     detailedDescription:
       " A simple HR management React application to view, add, edit, and delete employee records. This project demonstrates React, React Router, Axios, and a JSON backend deployed via Render.",
     link: "https://github.com/bean-123/hrApp",
@@ -33,7 +33,7 @@ const projectData = [
     hover: networking,
     fullpicture: fullnetworking,
     featured: true,
-    tech: ["React", "Css", "Javascript"],
+    tech: ["Css", "Html", "Wordpress"],
     detailedDescription:
       "This project is a modern, responsive WordPress site created for Ohjelmistokehitysprojekti1 (Business College Helsinki school). The site allows users to explore events and communities through an interactive filtering system on the homepage.",
     link: "https://github.com/bean-123/SoftwareDevelopment1",
@@ -79,7 +79,7 @@ const projectData = [
   {
     id: 6,
     title: "Developer Portfolio",
-    description: "Short description of Project Six",
+    description: "Personal portfolio page",
     cover: reactPortfolio,
     hover: reactPortfolio,
     fullpicture: fullportfolio,

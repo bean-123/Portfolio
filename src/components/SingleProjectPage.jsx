@@ -1,31 +1,7 @@
 import { useParams } from "react-router-dom";
 import projectData from "../data/projects";
 import styles from "./SingleProjectPage.module.css";
-
-// react-icons
-import {
-  SiPython,
-  SiNodedotjs,
-  SiReact,
-  SiCss3,
-  SiTailwindcss,
-  SiJavascript,
-  SiFirebase,
-  SiHtml5,
-  SiVite,
-} from "react-icons/si";
-
-const techIconsMap = {
-  React: <SiReact title="React" className={styles.techIcon} />,
-  Css: <SiCss3 title="CSS" className={styles.techIcon} />,
-  Tailwind: <SiTailwindcss title="Tailwind" className={styles.techIcon} />,
-  Firebase: <SiFirebase title="Firebase" className={styles.techIcon} />,
-  Javascript: <SiJavascript title="JavaScript" className={styles.techIcon} />,
-  Python: <SiPython title="Python" className={styles.techIcon} />,
-  Node: <SiNodedotjs title="Node.js" className={styles.techIcon} />,
-  Html: <SiHtml5 title="HTML5" className={styles.techIcon} />,
-  Vite: <SiVite title="Vite" className={styles.techIcon} />,
-};
+import { TechIcon } from "./TechIcon";
 
 const SingleProjectPage = () => {
   const { id } = useParams();
@@ -65,7 +41,7 @@ const SingleProjectPage = () => {
         <div className={styles.techStack}>
           {project.tech.map((tech) => (
             <div key={tech} className={styles.techIconWrapper}>
-              {techIconsMap[tech] || tech}
+              <TechIcon name={tech} />
             </div>
           ))}
         </div>

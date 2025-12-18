@@ -1,28 +1,7 @@
 import projectData from "../data/projects";
 import styles from "./ProjectPage.module.css";
 import { Link } from "react-router-dom";
-
-// import some icons from react-icons
-import {
-  SiPython,
-  SiNodedotjs,
-  SiReact,
-  SiCss3,
-  SiTailwindcss,
-  SiJavascript,
-  SiFirebase,
-} from "react-icons/si";
-
-// Map tech names to icons so theyre automatic
-const techIconsMap = {
-  React: <SiReact title="React" className={styles.techIcon} />,
-  Css: <SiCss3 title="CSS" className={styles.techIcon} />,
-  Tailwind: <SiTailwindcss title="Tailwind" className={styles.techIcon} />,
-  Firebase: <SiFirebase title="Firebase" className={styles.techIcon} />,
-  Javascript: <SiJavascript title="JavaScript" className={styles.techIcon} />,
-  Python: <SiPython title="Python" className={styles.techIcon} />,
-  Node: <SiNodedotjs title="Node.js" className={styles.techIcon} />,
-};
+import { TechIcon } from "./TechIcon";
 
 const ProjectPage = () => {
   return (
@@ -50,7 +29,9 @@ const ProjectPage = () => {
 
               {/* Tech icons row */}
               <div className={styles.techIcons}>
-                {proj.tech.map((tech) => techIconsMap[tech] || null)}
+                {proj.tech.map((tech) => (
+                  <TechIcon key={tech} name={tech} />
+                ))}
               </div>
             </div>
           </Link>

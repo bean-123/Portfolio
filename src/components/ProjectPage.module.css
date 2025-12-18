@@ -91,12 +91,12 @@ body {
   display: flex;
   gap: 8px;
   margin-top: 6px;
+  color: #333;
 }
 
 .techIcon {
   width: 20px;
   height: 20px;
-  color: #333;
 }
 
 /* Responsive adjustments */

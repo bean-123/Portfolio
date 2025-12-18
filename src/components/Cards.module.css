@@ -15,7 +15,7 @@
 }
 
 .cardImage {
-  width: 100px;
+  width: 160px;
   height: 100px;
   object-fit: fill;
   transition: transform 0.2s;
@@ -28,7 +28,7 @@
 
 .randomtext {
   margin-top: 10px;
-  max-width: 700px;
+  max-width: 1050px;
   text-align: justify;
 }
 
@@ -68,7 +68,7 @@
 }
 .hoverBox3 {
   position: absolute;
-  top: 20px; /* adjust to appear above cards */
+  top: 50px; /* adjust to appear above cards */
   left: 50%; /* center horizontally relative to container */
   transform: translateX(-50%);
   display: flex;
@@ -152,8 +152,8 @@
 .hoverBox3 img {
   width: auto;
   height: auto;
-  max-width: 650px;
-  max-height: 650px;
+  max-width: 550px;
+  max-height: 550px;
   object-fit: contain; /* ensures full image is visible without cropping */
 }
 
@@ -176,7 +176,7 @@
 .hoverBox6 img {
   width: auto;
   height: auto;
-  max-width: 500px;
-  max-height: 500px;
+  max-width: 400px;
+  max-height: 400px;
   object-fit: contain; /* ensures full image is visible without cropping */
 }
