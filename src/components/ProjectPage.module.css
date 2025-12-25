@@ -100,7 +100,7 @@ body {
 }
 
 /* Responsive adjustments */
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
   .projectGrid {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;

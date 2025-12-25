@@ -180,3 +180,72 @@
   max-height: 400px;
   object-fit: contain; /* ensures full image is visible without cropping */
 }
+
+@media (max-width: 1440px) {
+  .hoverBox1 {
+    position: absolute;
+    top: 50px; /* adjust to appear above cards */
+    left: 20%; /* center horizontally relative to container */
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column; /* change to row for side preview */
+    gap: 10px;
+    padding: 10px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none; /* makes it so the hover box is not staying when hovered */
+    z-index: 1000;
+  }
+
+  .hoverBox1 img {
+    width: auto;
+    height: auto;
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: contain; /* ensures full image is visible without cropping */
+    border-radius: 5px;
+  }
+  .hoverBox2 img {
+    width: auto;
+    height: auto;
+    max-width: 350px;
+    max-height: 350px;
+    object-fit: contain; /* ensures full image is visible without cropping */
+    border-radius: 5px;
+  }
+
+  .hoverBox3 img {
+    width: auto;
+    height: auto;
+    max-width: 450px;
+    max-height: 450px;
+    object-fit: contain; /* ensures full image is visible without cropping */
+    border-radius: 5px;
+  }
+
+  .hoverBox4 img {
+    width: auto;
+    height: auto;
+    max-width: 350px;
+    max-height: 350px;
+    object-fit: contain; /* ensures full image is visible without cropping */
+    border-radius: 5px;
+  }
+
+  .hoverBox5 img {
+    width: auto;
+    height: auto;
+    max-width: 450px;
+    max-height: 450px;
+    object-fit: contain; /* ensures full image is visible without cropping */
+    border-radius: 5px;
+  }
+
+  .hoverBox6 img {
+    width: auto;
+    height: auto;
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: contain; /* ensures full image is visible without cropping */
+    border-radius: 5px;
+  }
+}
