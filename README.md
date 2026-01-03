@@ -2,6 +2,8 @@
 
 Welcome to my personal portfolio! This website showcases my projects, skills, and creative work as a programmer and aspiring digital nomad. Built with modern web technologies, it highlights my abilities with interactive, responsive, and visually engaging components.
 
+Live site here: https://bean-123.github.io/Portfolio/
+
 ```
 Hero section showcasing my name, tagline, and call to action.
 
