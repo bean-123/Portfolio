@@ -19,6 +19,7 @@
   height: 100px;
   object-fit: fill;
   transition: transform 0.2s;
+  border-radius: 2px;
 }
 
 .cards .cardImage:hover {
@@ -322,5 +323,15 @@
     max-height: 300px;
     object-fit: contain; /* ensures full image is visible without cropping */
     border-radius: 5px;
+  }
+}
+
+@media (max-width: 440px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .randomtext {
+    margin-bottom: 50px;
   }
 }

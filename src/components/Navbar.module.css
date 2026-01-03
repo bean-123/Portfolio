@@ -25,10 +25,10 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: -4px; /* distance from text */
+  bottom: -4px;
   width: 0%;
-  height: 1px; /* thickness of line */
-  background-color: rgb(190, 133, 125); /* underline color */
+  height: 1px;
+  background-color: rgb(190, 133, 125);
 }
 
 .link:hover::after {
@@ -64,4 +64,10 @@
 
 .navigation li:hover {
   color: rgb(190, 133, 125);
+}
+
+@media (max-width: 440px) {
+  .navigation ul {
+    gap: 50px;
+  }
 }

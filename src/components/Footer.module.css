@@ -41,3 +41,10 @@ p {
 .contact a:hover {
   color: rgb(190, 133, 125);
 }
+
+@media (max-width: 440px) {
+  .footercontainer {
+    background-color: #ffcfcf;
+    font-size: 8px;
+  }
+}
