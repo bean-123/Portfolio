@@ -10,7 +10,7 @@ import SingleProjectPage from "./components/SingleProjectPage"; // <-- import th
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Portfolio">
       <Navbar />
 
       <Routes>
