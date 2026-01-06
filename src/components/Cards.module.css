@@ -32,6 +32,7 @@
   margin-top: 10px;
   max-width: 1050px;
   text-align: justify;
+  font-family: monospace;
 }
 
 .randomtextinner p {

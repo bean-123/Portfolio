@@ -12,12 +12,13 @@
   padding-top: 6em;
   box-sizing: border-box;
   padding-right: 10px;
+  font-family: monospace;
 }
 .bioTitle {
   font-size: 20px;
   font-weight: 600;
   color: #444;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 span {
   font-weight: bolder;

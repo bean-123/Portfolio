@@ -4,7 +4,7 @@
   justify-content: space-between;
   font-size: 12px;
   color: #4b4a4a;
-  font-family: "Roboto", sans-serif;
+  font-family: monospace;
 
   /* keep footer at the bottom */
   position: fixed;
