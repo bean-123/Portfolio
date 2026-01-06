@@ -64,7 +64,7 @@ const Cards = () => {
                   initial={{ scale: 0, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
                   exit={{ scale: 0, opacity: 0 }}
-                  transition={{ type: "spring", stiffness: 100, damping: 10 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 20 }}
                 >
                   <div
                     className={`${styles.hoverBox} ${

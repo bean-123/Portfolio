@@ -25,9 +25,9 @@ const BioPage = () => {
           experience in HTML, CSS, React, and React Router for front-end
           development. On the back-end, I’ve worked with Node.js, Express, and
           REST APIs, and I have foundational knowledge of SQL and exposure to
-          TypeScript and Java. Beyond coding, I’m fluent with Git, GitHub, npm
-          workflows, and deployment processes, which lets me take projects from
-          concept to live applications seamlessly.
+          TypeScript and a bit of Java. Beyond coding, I’m fluent with Git,
+          GitHub, npm workflows, and deployment processes, which lets me take
+          projects from concept to live applications seamlessly.
           <br />
           <br />
           How I Work: I’m independent, focused, and self-motivated, yet I know

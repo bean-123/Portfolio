@@ -61,7 +61,8 @@ const projectData = [
     extraImages: [pancake2],
     featured: true,
     tech: ["React", "Css", "Javascript"],
-    detailedDescription: "Long description here",
+    detailedDescription:
+      "Pancake Builder – An interactive web app that lets users design and order custom pancakes directly in the browser. Built with HTML, CSS, and JavaScript, the app features a dynamic interface where users can select a pancake base, add toppings, and see their order’s price update in real time. Orders are saved locally using LocalStorage, allowing users to track them on a dedicated orders page. Admins can view, update, or remove orders, simulating a real-life pancake shop workflow. This project highlights dynamic UI handling, form interactivity, state management, and client-side data persistence, demonstrating a combination of practical frontend development skills in a fun, creative way.",
     link: "https://github.com/bean-123/Pancake-task",
   },
   {
@@ -73,7 +74,8 @@ const projectData = [
     hover: socialproof,
     featured: true,
     tech: ["Css", "Html"],
-    detailedDescription: "Long description here",
+    detailedDescription:
+      "Frontend Mentor project that tests your layout skills on CSS, felxbox or grid.",
     link: "https://github.com/bean-123/Social-proof-section",
   },
   {
@@ -87,7 +89,7 @@ const projectData = [
     featured: true, // if u wanna show it on the front page
     tech: ["React", "Tailwind", "Firebase", "Vite"],
     detailedDescription:
-      "This is my personal portfolio website, it is built with React, Vite, and Tailwind CSS.This project reflects my passion for creative, interactive, and cleanly structured user interfaces — combining code, design, and detail into a smooth experience.",
+      "This is a personal portfolio website, it is built with React, Vite, and Tailwind CSS.This project reflects my passion for creative, interactive, and cleanly structured user interfaces — combining code, design, and detail into a smooth experience.",
     link: "https://github.com/bean-123/Portfolio-task",
     livelink: "https://bean-123.github.io/Portfolio-task/",
   },
