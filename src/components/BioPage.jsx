@@ -11,38 +11,38 @@ const BioPage = () => {
       <div className={styles.bioText}>
         <h1 className={styles.bioTitle}>who am i?</h1>
         <p className={styles.bioParagraph}>
-          I’m a programmer who builds for the web, breaks things to figure out
-          how they work, and chases that code-from-anywhere life. I’m into
-          projects that have personality, interfaces that breathe a little, and
-          tech that feels more like art than machinery. I get a kick out of
-          making things that are both functional and fun, and I’m always
-          experimenting with new ways to solve problems, learn new skills, and
-          push my creativity.
+          Hi! My name is Amy — a passionate developer, lifelong learner, and
+          problem solver. I thrive at the intersection of creativity and logic,
+          where code meets design, and ideas turn into interactive experiences.
+          My journey in tech began with curiosity and a computer, and over time,
+          it’s grown into a skill set that spans front-end, back-end, and
+          everything in between. I enjoy building projects that aren’t just
+          functional but also visually engaging, and I love exploring new
+          technologies to see what’s possible.
           <br />
           <br />
-          Right now I’m studying at Business College Helsinki, and next year
-          I’ll be diving into Software Engineering at Metropolia University of
-          Applied Sciences. I’m especially drawn to back-end development, but
-          front-end is just as exciting—I love working with React, JavaScript,
-          and Python to create interactive experiences that actually feel alive.
-          My projects range from small experiments to full web apps, each one
-          teaching me something new and helping me get closer to the kind of
-          programmer I want to become.
+          My Skills: I specialize in JavaScript and Python, with hands-on
+          experience in HTML, CSS, React, and React Router for front-end
+          development. On the back-end, I’ve worked with Node.js, Express, and
+          REST APIs, and I have foundational knowledge of SQL and exposure to
+          TypeScript and Java. Beyond coding, I’m fluent with Git, GitHub, npm
+          workflows, and deployment processes, which lets me take projects from
+          concept to live applications seamlessly.
           <br />
           <br />
-          When I’m not coding, I’m usually gaming, designing, reorganizing my
-          ideas, or learning something new that somehow ends up feeding back
-          into my projects. There’s always a next thing waiting, a new library
-          to explore, a new problem to solve, or a small tweak that turns a side
-          project into something much bigger. I’m constantly chasing growth—both
-          in my skills and in the projects I make.
+          How I Work: I’m independent, focused, and self-motivated, yet I know
+          the value of collaboration and learning from others. My approach is
+          iterative: I plan, build, test, and refine, making sure each step
+          brings something valuable to the table. I love breaking problems down
+          into manageable pieces, and I always look for creative solutions when
+          the obvious ones aren’t enough.
           <br />
           <br />
-          I want to keep learning as much as possible, grow as a programmer, and
-          create things that feel alive, personal, and just a little bit
-          unexpected. I love building, experimenting, and improving, and I’m
-          always looking for ways to make code, design, and creativity work
-          together.
+          Outside of Code: When I’m not programming, you’ll probably find me
+          exploring gaming worlds, diving into AI, or experimenting with small
+          creative projects that push the boundaries of what I know. Curiosity
+          fuels everything I do — whether it’s learning a new language,
+          exploring a new framework, or just tinkering with something for fun.
           <br />
           <br />
           If you wanna work together, reach me at

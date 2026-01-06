@@ -7,6 +7,7 @@
 }
 
 .cards {
+  position: relative;
   margin-top: 5rem;
   display: flex;
   justify-content: center;
@@ -43,8 +44,8 @@
 
 .hoverBox1 {
   position: absolute;
-  top: 50px; /* adjust to appear above cards */
-  left: 18%; /* center horizontally relative to container */
+  bottom: 90px; /* adjust to appear above cards */
+  right: -380px; /* center horizontally relative to container */
   transform: translateX(-50%);
   display: flex;
   flex-direction: column; /* change to row for side preview */
@@ -56,8 +57,8 @@
 }
 .hoverBox2 {
   position: absolute;
-  bottom: 40px; /* adjust to appear above cards */
-  left: 25%; /* center horizontally relative to container */
+  top: 100px; /* adjust to appear above cards */
+  right: -280px; /* center horizontally relative to container */
   transform: translateX(-50%);
   display: flex;
   flex-direction: column; /* change to row for side preview */
@@ -69,10 +70,11 @@
 }
 .hoverBox3 {
   position: absolute;
-  top: 50px; /* adjust to appear above cards */
-  left: 50%; /* center horizontally relative to container */
+  bottom: 120px; /* adjust to appear above cards */
+  left: 200px; /* center horizontally relative to container */
   transform: translateX(-50%);
   display: flex;
+  flex-direction: column;
   gap: 10px;
   padding: 10px;
   transition: opacity 0.3s ease, transform 0.3s ease;
@@ -81,8 +83,8 @@
 }
 .hoverBox4 {
   position: absolute;
-  bottom: 20px; /* adjust to appear above cards */
-  right: 15%; /* center horizontally relative to container */
+  top: 30px; /* adjust to appear above cards */
+  left: 130px; /* center horizontally relative to container */
   transform: translateX(-50%);
   display: flex;
   flex-direction: column; /* change to row for side preview */
@@ -94,8 +96,8 @@
 }
 .hoverBox5 {
   position: absolute;
-  top: 40px; /* adjust to appear above cards */
-  left: 70%; /* center horizontally relative to container */
+  bottom: 110px; /* adjust to appear above cards */
+  left: 280px; /* center horizontally relative to container */
   transform: translateX(-50%);
   display: flex;
   flex-direction: column; /* change to row for side preview */
@@ -107,8 +109,8 @@
 }
 .hoverBox6 {
   position: absolute;
-  bottom: 30px; /* adjust to appear above cards */
-  left: 83%; /* center horizontally relative to container */
+  top: 30px; /* adjust to appear above cards */
+  left: 290px; /* center horizontally relative to container */
   transform: translateX(-50%);
   display: flex;
   flex-direction: column; /* change to row for side preview */
