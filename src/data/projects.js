@@ -22,8 +22,10 @@ const projectData = [
     featured: true,
     tech: ["React", "Tailwind"],
     detailedDescription:
-      " A simple HR management React application to view, add, edit, and delete employee records. This project demonstrates React, React Router, Axios, and a JSON backend deployed via Render.",
+      " A simple HR management React application to view, add, edit, and delete employee records. This project demonstrates React, React Router, Axios, and a JSON backend deployed via Render. NOTE: You need to enter the backend site first and then view the live frontend site.",
     link: "https://github.com/bean-123/hrApp",
+    livelink: "https://hrapp-1-9wcn.onrender.com/",
+    livelink2: "https://hrapp-ukn2.onrender.com/",
   },
   {
     id: 2,
@@ -50,6 +52,7 @@ const projectData = [
     detailedDescription:
       "This is my solution to the IP Address Tracker challenge on Frontend Mentor. The goal was to build a web app where users can input an IP address or domain and see its location and related info displayed on an interactive map.",
     link: "https://github.com/bean-123/ip-address-tracker",
+    livelink: "https://bean-123.github.io/ip-address-tracker/",
   },
   {
     id: 4,
@@ -64,6 +67,7 @@ const projectData = [
     detailedDescription:
       "Pancake Builder – An interactive web app that lets users design and order custom pancakes directly in the browser. Built with HTML, CSS, and JavaScript, the app features a dynamic interface where users can select a pancake base, add toppings, and see their order’s price update in real time. Orders are saved locally using LocalStorage, allowing users to track them on a dedicated orders page. Admins can view, update, or remove orders, simulating a real-life pancake shop workflow. This project highlights dynamic UI handling, form interactivity, state management, and client-side data persistence, demonstrating a combination of practical frontend development skills in a fun, creative way.",
     link: "https://github.com/bean-123/Pancake-task",
+    livelink: "https://bean-123.github.io/Pancake-task/",
   },
   {
     id: 5,
@@ -77,6 +81,7 @@ const projectData = [
     detailedDescription:
       "Frontend Mentor project that tests your layout skills on CSS, felxbox or grid.",
     link: "https://github.com/bean-123/Social-proof-section",
+    livelink: "https://bean-123.github.io/Social-proof-section/",
   },
   {
     id: 6,

@@ -37,6 +37,16 @@ const SingleProjectPage = () => {
             View the live site here
           </a>
         )}
+        {project.livelink2 && (
+          <a
+            href={project.livelink2}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.projectLink2}
+          >
+            View the backend here
+          </a>
+        )}
 
         <div className={styles.techStack}>
           {project.tech.map((tech) => (
