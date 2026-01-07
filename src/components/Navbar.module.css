@@ -66,8 +66,14 @@
   color: rgb(190, 133, 125);
 }
 
-@media (max-width: 440px) {
+@media (max-width: 750px) {
   .navigation ul {
-    gap: 50px;
+    gap: 200px;
+  }
+}
+
+@media (max-width: 490px) {
+  .navigation ul {
+    gap: 60px;
   }
 }
