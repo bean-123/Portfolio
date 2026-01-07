@@ -337,10 +337,10 @@
   }
 }
 
-@media (max-height: 750px) {
+@media (max-height: 790px) {
   .hoverBox1 {
     top: -390px;
-    right: -450px;
+    right: -650px;
   }
 
   .hoverBox2 {
@@ -368,7 +368,7 @@
   }
 
   .hoverBox6 {
-    top: 0px;
-    left: 200px;
+    top: 10px;
+    left: 150px;
   }
 }
