@@ -7,10 +7,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProjectPage from "./components/ProjectPage";
 import BioPage from "./components/BioPage";
 import SingleProjectPage from "./components/SingleProjectPage"; // <-- import this
+import Analytics from "./components/Analytics";
 
 function App() {
   return (
     <BrowserRouter basename="/Portfolio">
+      <Analytics />
       <Navbar />
 
       <Routes>
