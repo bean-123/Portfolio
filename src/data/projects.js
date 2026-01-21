@@ -91,7 +91,7 @@ const projectData = [
     hover: reactPortfolio,
     fullpicture: fullportfolio,
     extraImages: [portfolio2],
-    featured: true, // if u wanna show it on the front page
+    featured: true,
     tech: ["React", "Tailwind", "Firebase", "Vite"],
     detailedDescription:
       "This is a personal portfolio website, it is built with React, Vite, and Tailwind CSS.This project reflects my passion for creative, interactive, and cleanly structured user interfaces — combining code, design, and detail into a smooth experience.",

@@ -6,13 +6,11 @@ import Footer from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProjectPage from "./components/ProjectPage";
 import BioPage from "./components/BioPage";
-import SingleProjectPage from "./components/SingleProjectPage"; // <-- import this
-import Analytics from "./components/Analytics";
+import SingleProjectPage from "./components/SingleProjectPage";
 
 function App() {
   return (
     <BrowserRouter basename="/Portfolio">
-      <Analytics />
       <Navbar />
 
       <Routes>
