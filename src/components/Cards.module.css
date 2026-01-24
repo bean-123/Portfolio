@@ -57,7 +57,9 @@
   flex-direction: column;
   gap: 10px;
   padding: 10px;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
   pointer-events: none;
   z-index: 1000;
 }
@@ -65,32 +67,32 @@
 /* Individual hover box positions */
 
 .hoverBox1 {
-  bottom: 90px;
+  bottom: 120px;
   right: -380px;
 }
 
 .hoverBox2 {
-  top: 95px;
+  top: 80px;
   right: -400px;
 }
 
 .hoverBox3 {
-  bottom: 120px;
+  bottom: 140px;
   left: 200px;
 }
 
 .hoverBox4 {
-  top: 30px;
-  left: 130px;
+  top: 20px;
+  left: 120px;
 }
 
 .hoverBox5 {
-  bottom: 110px;
+  bottom: 140px;
   left: 280px;
 }
 
 .hoverBox6 {
-  top: 10px;
+  top: 5px;
   left: 300px;
 }
 
@@ -98,6 +100,7 @@
 
 .hoversmalltext {
   flex-direction: column;
+  background-color: #ffcfcf;
 }
 
 .hoverTitle {
