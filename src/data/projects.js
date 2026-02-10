@@ -9,6 +9,7 @@ import fullnetworking from "../assets/images/fullnetworking.png";
 import pancake2 from "../assets/images/pancake2.png";
 import fullportfolio from "../assets/images/fullportfolio.png";
 import portfolio2 from "../assets/images/portfolio2.png";
+import pong from "../assets/images/pong.png";
 
 const projectData = [
   {
@@ -76,7 +77,7 @@ const projectData = [
       "This is my solution to the Social proof section challenge on Frontend Mentor.",
     cover: socialproof,
     hover: socialproof,
-    featured: true,
+    featured: false,
     tech: ["Css", "Html"],
     detailedDescription:
       "Frontend Mentor project that tests your layout skills on CSS, felxbox or grid.",
@@ -97,6 +98,19 @@ const projectData = [
       "This is a personal portfolio website, it is built with React, Vite, and Tailwind CSS.This project reflects my passion for creative, interactive, and cleanly structured user interfaces — combining code, design, and detail into a smooth experience.",
     link: "https://github.com/bean-123/Portfolio-task",
     livelink: "https://bean-123.github.io/Portfolio-task/",
+  },
+  {
+    id: 7,
+    title: "Python Pong Game",
+    description: "Simple Pong Game With Python",
+    cover: pong,
+    hover: pong,
+    fullpicture: pong,
+    featured: true,
+    tech: ["Python"],
+    detailedDescription:
+      "A classic two-player Pong game built with Python and Pygame. This project recreates the timeless arcade experience with smooth paddle controls, dynamic ball physics, and a simple scoring system.",
+    link: "https://github.com/bean-123/Python-Pong-Game",
   },
 ];
 

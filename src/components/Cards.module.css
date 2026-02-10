@@ -87,7 +87,7 @@
 }
 
 .hoverBox5 {
-  bottom: 140px;
+  bottom: 110px;
   left: 280px;
 }
 
@@ -149,8 +149,8 @@
 }
 
 .hoverBox5 img {
-  max-width: 550px;
-  max-height: 550px;
+  max-width: 400px;
+  max-height: 300px;
 }
 
 .hoverBox6 img {
@@ -168,10 +168,14 @@
 
   .hoverBox1 img,
   .hoverBox2 img,
-  .hoverBox3 img,
-  .hoverBox5 img {
+  .hoverBox3 img {
     max-width: 450px;
     max-height: 450px;
+  }
+
+  .hoverBox5 img {
+    max-width: 350px;
+    max-height: 350px;
   }
 
   .hoverBox4 img {
@@ -212,8 +216,8 @@
   }
 
   .hoverBox5 img {
-    max-width: 450px;
-    max-height: 450px;
+    max-width: 300px;
+    max-height: 300px;
   }
 
   .hoverBox6 img {
@@ -255,8 +259,8 @@
   }
 
   .hoverBox5 img {
-    max-width: 450px;
-    max-height: 450px;
+    max-width: 280px;
+    max-height: 280px;
   }
 
   .hoverBox5 {
