@@ -10,6 +10,9 @@ import pancake2 from "../assets/images/pancake2.png";
 import fullportfolio from "../assets/images/fullportfolio.png";
 import portfolio2 from "../assets/images/portfolio2.png";
 import pong from "../assets/images/pong.png";
+import Platformer1 from "../assets/images/Platformer1.png";
+import Platformer2 from "../assets/images/Platformer2.png";
+import Platformer3 from "../assets/images/Platformer3.png";
 
 const projectData = [
   {
@@ -106,11 +109,25 @@ const projectData = [
     cover: pong,
     hover: pong,
     fullpicture: pong,
-    featured: true,
+    featured: false,
     tech: ["Python"],
     detailedDescription:
       "A classic two-player Pong game built with Python and Pygame. This project recreates the timeless arcade experience with smooth paddle controls, dynamic ball physics, and a simple scoring system.",
     link: "https://github.com/bean-123/Python-Pong-Game",
+  },
+  {
+    id: 8,
+    title: "Platfomer",
+    description: "A vertical-scrolling 2D platformer built with Pygame.",
+    cover: Platformer1,
+    hover: Platformer2,
+    fullpicture: Platformer1,
+    extraImages: [Platformer2, Platformer3],
+    featured: true,
+    tech: ["Python"],
+    detailedDescription:
+      "A vertical-scrolling 2D platformer built with Pygame, focused on climbing as high as possible while surviving hazards and managing limited health. Platforms are partly handcrafted and partly procedurally generated, so no two climbs feel exactly the same.",
+    link: "https://github.com/bean-123/PlatformerDemo",
   },
 ];
 
