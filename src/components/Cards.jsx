@@ -7,17 +7,11 @@ import projectData from "../data/projects";
 const Cards = () => {
   const featuredProjects = projectData.filter((proj) => proj.featured);
   const [hoveredIndex, setHoveredIndex] = useState(null);
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   return (
     <div className={styles.cardscontainer}>
-      {/* Track mouse movement over this container */}
-      <div
-        className={styles.cards}
-        onMouseMove={(e) => setMousePosition({ x: e.clientX, y: e.clientY })}
-      >
+      <div className={styles.cards}>
         {featuredProjects.map((proj, index) => {
-          // Random starting positions for entry animation
           const startX =
             Math.random() < 0.5
               ? -window.innerWidth - Math.random() * 200
@@ -48,7 +42,6 @@ const Cards = () => {
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
-              {/* Main project image */}
               <Link to={`/projects/${proj.id}`} className={styles.cardLink}>
                 <img
                   src={proj.cover}
@@ -57,11 +50,12 @@ const Cards = () => {
                 />
               </Link>
 
-              {/* Hover overlay */}
               {hoveredIndex === index && (
                 <div style={{ position: "absolute", pointerEvents: "none" }}>
                   <div
-                    className={`${styles.hoverBox} ${styles[`hoverBox${index + 1}`]}`}
+                    className={`${styles.hoverBox} ${
+                      styles[`hoverBox${index + 1}`]
+                    }`}
                   >
                     <img src={proj.hover} alt={`Hover ${proj.title}`} />
                     <div className={styles.hoversmalltext}>
@@ -76,7 +70,6 @@ const Cards = () => {
         })}
       </div>
 
-      {/* Random text at the bottom */}
       <div className={styles.randomtext}>
         <motion.div
           initial={{ y: 100, opacity: 0 }}
