@@ -59,17 +59,9 @@ const Cards = () => {
 
               {/* Hover overlay */}
               {hoveredIndex === index && (
-                <motion.div
-                  style={{ position: "absolute", pointerEvents: "none" }}
-                  initial={{ scale: 0, opacity: 0 }}
-                  animate={{ scale: 1, opacity: 1 }}
-                  exit={{ scale: 0, opacity: 0 }}
-                  transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                >
+                <div style={{ position: "absolute", pointerEvents: "none" }}>
                   <div
-                    className={`${styles.hoverBox} ${
-                      styles[`hoverBox${index + 1}`]
-                    }`}
+                    className={`${styles.hoverBox} ${styles[`hoverBox${index + 1}`]}`}
                   >
                     <img src={proj.hover} alt={`Hover ${proj.title}`} />
                     <div className={styles.hoversmalltext}>
@@ -77,7 +69,7 @@ const Cards = () => {
                       <p>{proj.description}</p>
                     </div>
                   </div>
-                </motion.div>
+                </div>
               )}
             </motion.div>
           );
