@@ -13,6 +13,10 @@ import pong from "../assets/images/pong.png";
 import Platformer1 from "../assets/images/Platformer1.png";
 import Platformer2 from "../assets/images/Platformer2.png";
 import Platformer3 from "../assets/images/Platformer3.png";
+import event from "../assets/images/eventsite.png";
+import registration from "../assets/images/registrations.png";
+import admin from "../assets/images/admin.png";
+import home from "../assets/images/websitehome.png";
 
 const projectData = [
   {
@@ -51,7 +55,7 @@ const projectData = [
       "Web app where users can input an IP address or domain and see its location",
     cover: iptracker,
     hover: iptracker,
-    featured: true,
+    featured: false,
     tech: ["Css", "Javascript"],
     detailedDescription:
       "This is my solution to the IP Address Tracker challenge on Frontend Mentor. The goal was to build a web app where users can input an IP address or domain and see its location and related info displayed on an interactive map.",
@@ -128,6 +132,20 @@ const projectData = [
     detailedDescription:
       "A vertical-scrolling 2D platformer built with Pygame, focused on climbing as high as possible while surviving hazards and managing limited health. Platforms are partly handcrafted and partly procedurally generated, so no two climbs feel exactly the same.",
     link: "https://github.com/bean-123/PlatformerDemo",
+  },
+  {
+    id: 9,
+    title: "Event Website",
+    description: "Event website built with React and Tailwind CSS",
+    cover: home,
+    hover: home,
+    fullpicture: event,
+    extraImages: [admin, registration],
+    featured: true,
+    tech: ["React, Tailwind"],
+    detailedDescription:
+      "Website for a fictional event, built with React and Tailwind CSS. The site features a clean, modern design with sections for event details, schedule, speakers, and registration. It demonstrates responsive design principles and interactive UI elements to create an engaging user experience. Site has Admin panel where you can add, edit and delete events. Fully functional registration form with validation and local storage for user data.",
+    livelink: "https://ellarion-tales-website.vercel.app/",
   },
 ];
 
