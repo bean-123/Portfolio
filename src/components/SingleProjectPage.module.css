@@ -32,6 +32,14 @@ h1 {
   font-size: 15px;
 }
 
+.description p {
+  margin-bottom: 0.75rem;
+}
+
+.description p:empty {
+  margin-bottom: 1.5rem;
+}
+
 .projectLink {
   display: inline-block;
   margin-top: 0.5rem;

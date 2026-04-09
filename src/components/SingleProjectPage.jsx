@@ -15,7 +15,11 @@ const SingleProjectPage = () => {
       <div className={styles.leftColumn}>
         <h1>{project.title}</h1>
 
-        <p className={styles.description}>{project.detailedDescription}</p>
+        <div className={styles.description}>
+          {project.detailedDescription.split("\n").map((line, i) => (
+            <p key={i}>{line}</p>
+          ))}
+        </div>
 
         {project.link && (
           <a
