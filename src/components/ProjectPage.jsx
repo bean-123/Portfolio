@@ -19,6 +19,7 @@ const ProjectPage = () => {
                 src={proj.cover}
                 alt={proj.title}
                 className={styles.projectImage}
+                loading="lazy"
               />
               <div className={styles.imageOverlay}></div>
             </div>

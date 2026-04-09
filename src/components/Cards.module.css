@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow: visible;
 }
 
 .cards {
@@ -13,6 +14,16 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
+  overflow: visible;
+}
+
+.cardWrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.cardWrapper.active {
+  z-index: 1001;
 }
 
 .cardImage {
@@ -44,23 +55,19 @@
 
 /* ---------------- Hover Boxes ---------------- */
 
-.hoverBox1,
-.hoverBox2,
-.hoverBox3,
-.hoverBox4,
-.hoverBox5,
-.hoverBox6 {
+.hoverBox {
   position: absolute;
-  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 10px;
-  transition:
-    opacity 0.3s ease,
-    transform 0.3s ease;
   pointer-events: none;
-  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hoverBox.visible {
+  opacity: 1;
 }
 
 /* Individual hover box positions */
@@ -71,17 +78,17 @@
 }
 
 .hoverBox2 {
-  top: 80px;
-  right: -400px;
+  top: 160px;
+  left: -400px;
 }
 
 .hoverBox3 {
-  bottom: 140px;
+  top: -380px;
   left: 200px;
 }
 
 .hoverBox4 {
-  top: 20px;
+  top: 120px;
   left: 120px;
 }
 
@@ -91,8 +98,8 @@
 }
 
 .hoverBox6 {
-  top: 5px;
-  left: 300px;
+  top: 30px;
+  left: 200px;
 }
 
 /* Hover text */
@@ -115,167 +122,20 @@
 
 /* Hover images */
 
-.hoverBox1 img,
-.hoverBox2 img,
-.hoverBox3 img,
-.hoverBox4 img,
-.hoverBox5 img,
-.hoverBox6 img {
+.hoverBox1 img { max-width: 500px; max-height: 500px; }
+.hoverBox2 img { max-width: 450px; max-height: 450px; }
+.hoverBox3 img { max-width: 450px; max-height: 450px; }
+.hoverBox4 img { max-width: 380px; max-height: 380px; }
+.hoverBox5 img { max-width: 400px; max-height: 300px; }
+.hoverBox6 img { max-width: 350px; max-height: 350px; }
+
+.hoverBox img {
   width: auto;
   height: auto;
   object-fit: contain;
 }
 
-.hoverBox1 img {
-  max-width: 500px;
-  max-height: 500px;
-}
-
-.hoverBox2 img {
-  max-width: 450px;
-  max-height: 450px;
-}
-
-.hoverBox3 img {
-  max-width: 550px;
-  max-height: 550px;
-}
-
-.hoverBox4 img {
-  max-width: 450px;
-  max-height: 450px;
-}
-
-.hoverBox5 img {
-  max-width: 400px;
-  max-height: 300px;
-}
-
-.hoverBox6 img {
-  max-width: 350px;
-  max-height: 350px;
-}
-
 /* ---------------- Media Queries ---------------- */
-
-@media (max-width: 1700px) {
-  .hoverBox1 {
-    bottom: 120px;
-    right: -480px;
-  }
-
-  .hoverBox1 img,
-  .hoverBox2 img,
-  .hoverBox3 img {
-    max-width: 450px;
-    max-height: 450px;
-  }
-
-  .hoverBox5 img {
-    max-width: 350px;
-    max-height: 350px;
-  }
-
-  .hoverBox4 img {
-    max-width: 350px;
-    max-height: 350px;
-  }
-
-  .hoverBox6 img {
-    max-width: 300px;
-    max-height: 300px;
-  }
-}
-
-@media (max-width: 1600px) {
-  .hoverBox1 {
-    bottom: 120px;
-    right: -630px;
-  }
-
-  .hoverBox1 img {
-    max-width: 450px;
-    max-height: 450px;
-  }
-
-  .hoverBox2 img {
-    max-width: 400px;
-    max-height: 400px;
-  }
-
-  .hoverBox3 img {
-    max-width: 450px;
-    max-height: 450px;
-  }
-
-  .hoverBox4 img {
-    max-width: 350px;
-    max-height: 350px;
-  }
-
-  .hoverBox5 img {
-    max-width: 300px;
-    max-height: 300px;
-  }
-
-  .hoverBox6 img {
-    max-width: 300px;
-    max-height: 300px;
-  }
-
-  .hoverBox6 {
-    top: 80px;
-    left: 190px;
-  }
-}
-
-/* second 1600px block preserved exactly for behavior */
-@media (max-width: 1600px) {
-  .hoverBox1 {
-    bottom: 120px;
-    right: -730px;
-  }
-
-  .hoverBox1 img {
-    max-width: 450px;
-    max-height: 450px;
-  }
-
-  .hoverBox2 img {
-    max-width: 400px;
-    max-height: 400px;
-  }
-
-  .hoverBox3 img {
-    max-width: 450px;
-    max-height: 450px;
-  }
-
-  .hoverBox4 img {
-    max-width: 350px;
-    max-height: 350px;
-  }
-
-  .hoverBox5 img {
-    max-width: 280px;
-    max-height: 280px;
-  }
-
-  .hoverBox5 {
-    bottom: 110px;
-    left: 180px;
-  }
-
-  .hoverBox6 img {
-    max-width: 300px;
-    max-height: 300px;
-  }
-
-  .hoverBox6 {
-    top: 80px;
-    left: 100px;
-  }
-}
 
 @media (max-width: 1020px) {
   .cardImage {
@@ -342,38 +202,3 @@
   }
 }
 
-@media (max-height: 790px) {
-  .hoverBox1 {
-    top: -390px;
-    right: -650px;
-  }
-
-  .hoverBox2 {
-    top: 50px;
-    right: -400px;
-  }
-
-  .hoverBox3 {
-    bottom: 120px;
-    left: 200px;
-  }
-
-  .hoverBox4 {
-    top: 20px;
-    left: 200px;
-  }
-
-  .hoverBox4 p {
-    background-color: #ffcfcf;
-  }
-
-  .hoverBox5 {
-    bottom: 110px;
-    left: 280px;
-  }
-
-  .hoverBox6 {
-    top: 10px;
-    left: 150px;
-  }
-}

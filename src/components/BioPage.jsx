@@ -45,8 +45,8 @@ const BioPage = () => {
           exploring a new framework, or just tinkering with something for fun.
           <br />
           <br />
-          If you wanna work together, reach me at
-          <span> amy.platt@hotmail.com</span>
+          If you wanna work together, reach me at{" "}
+          <a href="mailto:amy.platt@hotmail.com">amy.platt@hotmail.com</a>
         </p>
       </div>
 

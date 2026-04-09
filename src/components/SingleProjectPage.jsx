@@ -67,6 +67,7 @@ const SingleProjectPage = () => {
           src={project.fullpicture || project.cover}
           alt={project.title}
           className={styles.projectImage}
+          loading="lazy"
         />
         {/* Extra images */}
         {project.extraImages?.map((img, index) => (
@@ -75,6 +76,7 @@ const SingleProjectPage = () => {
               src={img}
               alt={`${project.title} ${index + 2}`}
               className={styles.projectImage}
+              loading="lazy"
             />
           </div>
         ))}

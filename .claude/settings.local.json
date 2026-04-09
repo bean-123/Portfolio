@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:rafter.work)",
+      "WebSearch",
+      "WebFetch(domain:forum.readymag.com)",
+      "WebFetch(domain:gsap.com)",
+      "WebFetch(domain:codepen.io)",
+      "WebFetch(domain:www.threads.com)",
+      "WebFetch(domain:blog.readymag.com)",
+      "WebFetch(domain:help.readymag.com)",
+      "Bash(curl -s \"https://rafter.work/\")",
+      "Bash(curl -sL \"https://rafter.work/\")",
+      "Bash(curl --max-time 20 -sL \"https://rafter.work/\")",
+      "Bash(curl --max-time 15 \"https://rafter.work/\")",
+      "Bash(curl --max-time 15 -k \"https://rafter.work/\")",
+      "Bash(curl --max-time 20 -k \"https://rafter.work/\")",
+      "Bash(curl --max-time 30 -k \"https://st-p.rmcdn1.net/341d0bff/dist/viewer.js\")",
+      "Bash(curl --max-time 30 -k \"https://rafter.work/\")",
+      "Read(//tmp/**)",
+      "Bash(curl --max-time 30 -k \"https://st-p.rmcdn1.net/341d0bff/dist/c/c-HFUWSTKG.js\")",
+      "Bash(curl --max-time 30 -k -o /tmp/rafter_preview.jpg \"https://scontent-hel3-1.cdninstagram.com/v/t51.82787-15/527640107_17916874206115286_3240201023326891513_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=_itEqR6_bmQQ7kNvwHcXwmX&_nc_oc=AdosN70viasQp9g9FZ-YNFYQG_hVeDiFEoSvX6RY22g4pB9xq9NeSE__gdc1Azgc6js&_nc_zt=23&_nc_ht=scontent-hel3-1.cdninstagram.com&_nc_gid=0DjOKmP3rXAxSri46K10tg&_nc_ss=7a30f&oh=00_Af17nH2pkEesbIol1SSHL-wVNTlyN-Ypbrxh9BaYry2Scg&oe=69DD5870\")",
+      "Bash(curl --max-time 30 -k \"https://rafter.work/who/\")",
+      "Bash(curl --max-time 30 -k \"https://st-p.rmcdn1.net/341d0bff/dist/c/c-DOWYRK34.js\")",
+      "Bash(grep -oE '_t\\\\\\(.*?angle.{0,200}')",
+      "Bash(grep -oE 'function _t.{0,300}|_t=function.{0,300}')",
+      "Bash(grep -oE 'function .t\\\\\\([^\\)]*angle[^\\)]*\\\\\\).{0,300}')",
+      "Bash(grep -oE 'hasHoverAnimation.{0,500}')",
+      "Bash(grep -oE 'getNormalizedAnimation.{0,500}')",
+      "Bash(grep -oE '\"effects\"[^}]{0,200}')",
+      "Bash(grep -oE 'effects.*opacity.{0,100}|opacity.*effects.{0,100}')",
+      "Bash(grep -oE '\"pages\":\\\\[.{0,10000}')",
+      "Bash(grep -oE '\"pages\":\\\\[.{0,2000}')",
+      "Bash(curl --max-time 20 -k -o /tmp/rafter_who_screenshot.jpg \"https://c-p.rmcdn.net/65549eb1b7453c00692f96c7/4690774/Screenshot-269615c4-5a6c-494e-aef8-66aa48ea42e1_readyscr.jpg\")",
+      "Bash(curl --max-time 20 -k -o /tmp/rafter_overview_screenshot.jpg \"https://c-p.rmcdn.net/65549eb1b7453c00692f96c7/4690774/Screenshot-ac0875a5-aa40-4497-b413-94b839db41dc_readyscr.jpg\")",
+      "Bash(curl --max-time 20 -k \"https://c-p.rmcdn.net/65549eb1b7453c00692f96c7/4690774/HtmlSnippet-be34ee61-2eec-4492-8afd-f599a14b9878.html\")",
+      "Bash(curl --max-time 20 -k \"https://c-p.rmcdn.net/65549eb1b7453c00692f96c7/4690774/HtmlSnippet-6ff604bb-fb6b-4d13-b5bd-437186fa33f1.html\")",
+      "Bash(grep -E 'width: [1-9][0-9]{2,}px')",
+      "Bash(grep -E 'width: [0-9]{1,2}\\\\.?[0-9]*px')",
+      "Bash(curl --max-time 20 -k \"https://c-p.rmcdn.net/65549eb1b7453c00692f96c7/4690774/HtmlSnippet-01c846ce-38aa-4df4-b65d-aefa921283c6.html\")"
+    ]
+  }
+}

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import styles from "./Cards.module.css";
@@ -8,29 +8,37 @@ const Cards = () => {
   const featuredProjects = projectData.filter((proj) => proj.featured);
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
+  const animationValues = useMemo(
+    () =>
+      featuredProjects.map(() => ({
+        startX:
+          Math.random() < 0.5
+            ? -window.innerWidth - Math.random() * 200
+            : window.innerWidth + Math.random() * 200,
+        startY:
+          Math.random() < 0.5
+            ? -window.innerHeight - Math.random() * 200
+            : window.innerHeight + Math.random() * 200,
+        rotate: Math.random() * 10 - 5,
+      })),
+    []
+  );
+
   return (
     <div className={styles.cardscontainer}>
       <div className={styles.cards}>
         {featuredProjects.map((proj, index) => {
-          const startX =
-            Math.random() < 0.5
-              ? -window.innerWidth - Math.random() * 200
-              : window.innerWidth + Math.random() * 200;
-
-          const startY =
-            Math.random() < 0.5
-              ? -window.innerHeight - Math.random() * 200
-              : window.innerHeight + Math.random() * 200;
+          const { startX, startY, rotate } = animationValues[index];
 
           return (
             <motion.div
               key={proj.id}
-              className={styles.cardWrapper}
+              className={`${styles.cardWrapper} ${hoveredIndex === index ? styles.active : ""}`}
               initial={{
                 opacity: 0,
                 x: startX,
                 y: startY,
-                rotate: Math.random() * 10 - 5,
+                rotate,
               }}
               animate={{ opacity: 1, x: 0, y: 0, rotate: 0 }}
               transition={{
@@ -50,21 +58,16 @@ const Cards = () => {
                 />
               </Link>
 
-              {hoveredIndex === index && (
-                <div style={{ position: "absolute", pointerEvents: "none" }}>
-                  <div
-                    className={`${styles.hoverBox} ${
-                      styles[`hoverBox${index + 1}`]
-                    }`}
-                  >
-                    <img src={proj.hover} alt={`Hover ${proj.title}`} />
-                    <div className={styles.hoversmalltext}>
-                      <h3 className={styles.hoverTitle}>{proj.title}</h3>
-                      <p>{proj.description}</p>
-                    </div>
-                  </div>
+              <div
+                className={`${styles.hoverBox} ${styles[`hoverBox${index + 1}`]} ${hoveredIndex === index ? styles.visible : ""}`}
+              >
+                <img src={proj.hover} alt={proj.title} />
+                <div className={styles.hoversmalltext}>
+                  <h3 className={styles.hoverTitle}>{proj.title}</h3>
+                  <p>{proj.description}</p>
                 </div>
-              )}
+              </div>
+
             </motion.div>
           );
         })}

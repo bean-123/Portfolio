@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProjectPage from "./components/ProjectPage";
 import BioPage from "./components/BioPage";
 import SingleProjectPage from "./components/SingleProjectPage";
+import NotFoundPage from "./components/NotFoundPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/projects" element={<ProjectPage />} />
         <Route path="/bio" element={<BioPage />} />
         <Route path="/projects/:id" element={<SingleProjectPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
 
       <Footer />

@@ -1,30 +1,30 @@
-import hrapp from "../assets/images/hrapp.png";
-import networking from "../assets/images/networking.png";
-import iptracker from "../assets/images/iptracker.png";
-import pancake from "../assets/images/pancake.png";
-import socialproof from "../assets/images/socialproof.png";
-import reactPortfolio from "../assets/images/reactPortfolio.png";
+import admin from "../assets/images/admin.png";
+import adminblog from "../assets/images/adminblog.png";
+import admineevent from "../assets/images/adminevent.png";
+import admingallery from "../assets/images/admingallery.png";
+import adminlog from "../assets/images/adminlog.png";
+import adminusers from "../assets/images/adminusers.png";
+import blogdraft from "../assets/images/blogdraft.png";
+import event from "../assets/images/eventsite.png";
 import fullHrapp from "../assets/images/fullHrapp.png";
 import fullnetworking from "../assets/images/fullnetworking.png";
-import pancake2 from "../assets/images/pancake2.png";
 import fullportfolio from "../assets/images/fullportfolio.png";
-import portfolio2 from "../assets/images/portfolio2.png";
-import pong from "../assets/images/pong.png";
+import home from "../assets/images/websitehome.png";
+import hrapp from "../assets/images/hrapp.png";
+import iptracker from "../assets/images/iptracker.png";
+import networking from "../assets/images/networking.png";
+import pancake from "../assets/images/pancake.png";
+import pancake2 from "../assets/images/pancake2.png";
 import Platformer1 from "../assets/images/Platformer1.png";
 import Platformer2 from "../assets/images/Platformer2.png";
 import Platformer3 from "../assets/images/Platformer3.png";
-import event from "../assets/images/eventsite.png";
+import pong from "../assets/images/pong.png";
+import portfolio2 from "../assets/images/portfolio2.png";
+import reactPortfolio from "../assets/images/reactPortfolio.png";
 import registration from "../assets/images/registrations.png";
-import admin from "../assets/images/admin.png";
-import home from "../assets/images/websitehome.png";
+import socialproof from "../assets/images/socialproof.png";
 import ticketemail from "../assets/images/ticketemail.png";
-import admineevent from "../assets/images/adminevent.png";
-import adminusers from "../assets/images/adminusers.png";
-import adminlog from "../assets/images/adminlog.png";
-import adminblog from "../assets/images/adminblog.png";
-import admingallery from "../assets/images/admingallery.png";
 import welcomeemail from "../assets/images/welcomeemail.png";
-import blogdraft from "../assets/images/blogdraft.png";
 
 const projectData = [
   {
@@ -161,7 +161,7 @@ const projectData = [
       blogdraft,
     ],
     featured: true,
-    tech: ["React, Tailwind"],
+    tech: ["React", "Tailwind"],
     detailedDescription:
       "Website for a fictional event, built with React and Tailwind CSS. \n The site features a clean, modern design with sections for event details, schedule, speakers, and registration. \n It demonstrates responsive design principles and interactive UI elements to create an engaging user experience. \n Site has Admin panel where you can add, edit and delete events, promote users to be admin, create blog posts and add photos to albums and in addition there is an audit log that logs what admins are doing. Fully functional registration form with validation and local storage for user data. ",
     livelink: "https://ellarion-tales-website.vercel.app/",
