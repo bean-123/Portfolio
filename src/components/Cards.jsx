@@ -62,10 +62,14 @@ const Cards = () => {
                 className={`${styles.hoverBox} ${styles[`hoverBox${index + 1}`]} ${hoveredIndex === index ? styles.visible : ""}`}
               >
                 <img src={proj.hover} alt={proj.title} />
-                <div className={styles.hoversmalltext}>
-                  <h3 className={styles.hoverTitle}>{proj.title}</h3>
-                  <p>{proj.description}</p>
-                </div>
+              </div>
+
+              <div
+                className={`${styles.hoverLabel} ${styles[`hoverLabel${index + 1}`]} ${hoveredIndex === index ? styles.visible : ""}`}
+              >
+                <span className={styles.hoverLabelTitle}>{proj.title}</span>
+                <br />
+                {proj.description}
               </div>
 
             </motion.div>
