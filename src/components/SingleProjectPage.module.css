@@ -16,7 +16,11 @@
 }
 
 h1 {
-  font-weight: lighter;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #333;
 }
 
 .leftColumn {
@@ -29,7 +33,10 @@ h1 {
 }
 
 .description {
-  font-size: 15px;
+  font-size: 11px;
+  color: #555;
+  letter-spacing: 1.5px;
+  line-height: 1.9;
 }
 
 .description p {
@@ -43,26 +50,32 @@ h1 {
 .projectLink {
   display: inline-block;
   margin-top: 0.5rem;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   text-decoration: none;
-  color: #333;
+  color: #555;
+  transition: color 0.2s ease;
 }
 
 .projectLink:hover {
-  text-decoration: underline;
   color: rgb(190, 133, 125);
 }
 
 .projectLink2 {
   display: inline-block;
   margin-top: 0.5rem;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   text-decoration: none;
-  color: #333;
+  color: #555;
+  transition: color 0.2s ease;
 }
 
 .projectLink2:hover {
-  text-decoration: underline;
   color: rgb(190, 133, 125);
 }
 
@@ -94,7 +107,7 @@ h1 {
   width: 97%;
   height: auto;
   display: block;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .extraImageWrapper {

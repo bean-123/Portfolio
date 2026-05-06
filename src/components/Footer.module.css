@@ -4,7 +4,6 @@
   justify-content: space-between;
   font-size: 12px;
   color: #4b4a4a;
-  font-family: monospace;
   background-color: #ffcfcf;
 
   /* keep footer at the bottom */
@@ -16,9 +15,6 @@
   z-index: 999; /* ensures it's above other content */
 }
 
-p {
-  font-size: 20px;
-}
 
 .contact {
   display: flex;
