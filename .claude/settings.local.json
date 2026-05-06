@@ -37,7 +37,8 @@
       "Bash(curl --max-time 20 -k \"https://c-p.rmcdn.net/65549eb1b7453c00692f96c7/4690774/HtmlSnippet-6ff604bb-fb6b-4d13-b5bd-437186fa33f1.html\")",
       "Bash(grep -E 'width: [1-9][0-9]{2,}px')",
       "Bash(grep -E 'width: [0-9]{1,2}\\\\.?[0-9]*px')",
-      "Bash(curl --max-time 20 -k \"https://c-p.rmcdn.net/65549eb1b7453c00692f96c7/4690774/HtmlSnippet-01c846ce-38aa-4df4-b65d-aefa921283c6.html\")"
+      "Bash(curl --max-time 20 -k \"https://c-p.rmcdn.net/65549eb1b7453c00692f96c7/4690774/HtmlSnippet-01c846ce-38aa-4df4-b65d-aefa921283c6.html\")",
+      "Bash(node -e \"const p = require\\('./src/data/projects.js'\\).default || require\\('./src/data/projects.js'\\); p.filter\\(x=>x.featured\\).forEach\\(x => console.log\\(x.title, '| cover:', x.cover === x.hover ? 'SAME AS HOVER' : 'different hover'\\)\\)\")"
     ]
   }
 }
