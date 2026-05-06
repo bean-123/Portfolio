@@ -27,6 +27,7 @@ const SingleProjectPage = () => {
             target="_blank"
             rel="noopener noreferrer"
             className={styles.projectLink}
+            onClick={() => gtag("event", "click", { event_category: "project_link", event_label: `${project.title} - GitHub` })}
           >
             View the project on GitHub
           </a>
@@ -37,6 +38,7 @@ const SingleProjectPage = () => {
             target="_blank"
             rel="noopener noreferrer"
             className={styles.projectLink}
+            onClick={() => gtag("event", "click", { event_category: "project_link", event_label: `${project.title} - Live Site` })}
           >
             View the live site here
           </a>
@@ -47,6 +49,7 @@ const SingleProjectPage = () => {
             target="_blank"
             rel="noopener noreferrer"
             className={styles.projectLink2}
+            onClick={() => gtag("event", "click", { event_category: "project_link", event_label: `${project.title} - Backend` })}
           >
             View the backend here
           </a>
