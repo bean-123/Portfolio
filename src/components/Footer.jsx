@@ -23,7 +23,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div>TROUBLEMAKING @ ALL OWER THE WORLD</div>
+      <div>CURRENTLY BASED @ HELSINKI</div>
       <div>© AMY PLATT 2025</div>
     </div>
   );
