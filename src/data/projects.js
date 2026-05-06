@@ -25,124 +25,37 @@ import registration from "../assets/images/registrations.png";
 import socialproof from "../assets/images/socialproof.png";
 import ticketemail from "../assets/images/ticketemail.png";
 import welcomeemail from "../assets/images/welcomeemail.png";
+import breedingwebsite from "../assets/images/breedingwebsite.png";
+import addkitten from "../assets/images/addkitten.png";
+import breedingwebsiteadmin from "../assets/images/breedingwebsiteadmin.png";
+import breedingwebsitefull from "../assets/images/breedingwebsitefull.png";
+import editkitten from "../assets/images/editkitten.png";
+import editlitter from "../assets/images/editlitter.png";
+import inquiries from "../assets/images/inquiries.png";
 
 const projectData = [
   {
     id: 1,
-    title: "HR App",
-    description:
-      "A simple HR management React application to view, add, edit, and delete employee records.",
-    cover: hrapp,
-    hover: hrapp,
-    fullpicture: fullHrapp,
+    title: "Breeding Website",
+    description: "Website for breeders",
+    cover: breedingwebsite,
+    hover: breedingwebsite,
+    fullpicture: breedingwebsitefull,
+    extraImages: [
+      breedingwebsiteadmin,
+      addkitten,
+      editkitten,
+      editlitter,
+      inquiries,
+    ],
     featured: true,
     tech: ["React", "Tailwind"],
     detailedDescription:
-      " A simple HR management React application to view, add, edit, and delete employee records. This project demonstrates React, React Router, Axios, and a JSON backend deployed via Render. NOTE: You need to enter the backend site first and then view the live frontend site.",
-    link: "https://github.com/bean-123/hrApp",
-    livelink: "https://hrapp-1-9wcn.onrender.com/",
-    livelink2: "https://hrapp-ukn2.onrender.com/",
+      "A full-stack breeding website built for Sphynx cat breeders to showcase their cats, litters, and available kittens to potential buyers. The owner can manage all content through a secure admin panel — no coding required.",
+    livelink: "https://breeding-website.vercel.app/",
   },
   {
     id: 2,
-    title: "Networking Website",
-    description: "A custom WordPress project",
-    cover: networking,
-    hover: networking,
-    fullpicture: fullnetworking,
-    featured: true,
-    tech: ["Css", "Html", "Wordpress"],
-    detailedDescription:
-      "This project is a modern, responsive WordPress site created for Ohjelmistokehitysprojekti1 (Business College Helsinki school). The site allows users to explore events and communities through an interactive filtering system on the homepage.",
-    link: "https://github.com/bean-123/SoftwareDevelopment1",
-  },
-  {
-    id: 3,
-    title: "IP Address Tracker",
-    description:
-      "Web app where users can input an IP address or domain and see its location",
-    cover: iptracker,
-    hover: iptracker,
-    featured: false,
-    tech: ["Css", "Javascript"],
-    detailedDescription:
-      "This is my solution to the IP Address Tracker challenge on Frontend Mentor. The goal was to build a web app where users can input an IP address or domain and see its location and related info displayed on an interactive map.",
-    link: "https://github.com/bean-123/ip-address-tracker",
-    livelink: "https://bean-123.github.io/ip-address-tracker/",
-  },
-  {
-    id: 4,
-    title: "Pancake Factory",
-    description:
-      "Web application where users can build a pancake and manage customer orders.",
-    cover: pancake,
-    hover: pancake,
-    extraImages: [pancake2],
-    featured: true,
-    tech: ["Css", "Javascript"],
-    detailedDescription:
-      "Pancake Builder – An interactive web app that lets users design and order custom pancakes directly in the browser. Built with HTML, CSS, and JavaScript, the app features a dynamic interface where users can select a pancake base, add toppings, and see their order’s price update in real time. Orders are saved locally using LocalStorage, allowing users to track them on a dedicated orders page. Admins can view, update, or remove orders, simulating a real-life pancake shop workflow. This project highlights dynamic UI handling, form interactivity, state management, and client-side data persistence, demonstrating a combination of practical frontend development skills in a fun, creative way.",
-    link: "https://github.com/bean-123/Pancake-task",
-    livelink: "https://bean-123.github.io/Pancake-task/",
-  },
-  {
-    id: 5,
-    title: "Social Proof",
-    description:
-      "This is my solution to the Social proof section challenge on Frontend Mentor.",
-    cover: socialproof,
-    hover: socialproof,
-    featured: false,
-    tech: ["Css", "Html"],
-    detailedDescription:
-      "Frontend Mentor project that tests your layout skills on CSS, felxbox or grid.",
-    link: "https://github.com/bean-123/Social-proof-section",
-    livelink: "https://bean-123.github.io/Social-proof-section/",
-  },
-  {
-    id: 6,
-    title: "Developer Portfolio",
-    description: "Personal portfolio page",
-    cover: reactPortfolio,
-    hover: reactPortfolio,
-    fullpicture: fullportfolio,
-    extraImages: [portfolio2],
-    featured: true,
-    tech: ["React", "Tailwind", "Firebase", "Vite"],
-    detailedDescription:
-      "This is a personal portfolio website, it is built with React, Vite, and Tailwind CSS.This project reflects my passion for creative, interactive, and cleanly structured user interfaces — combining code, design, and detail into a smooth experience.",
-    link: "https://github.com/bean-123/Portfolio-task",
-    livelink: "https://bean-123.github.io/Portfolio-task/",
-  },
-  {
-    id: 7,
-    title: "Python Pong Game",
-    description: "Simple Pong Game With Python",
-    cover: pong,
-    hover: pong,
-    fullpicture: pong,
-    featured: false,
-    tech: ["Python"],
-    detailedDescription:
-      "A classic two-player Pong game built with Python and Pygame. This project recreates the timeless arcade experience with smooth paddle controls, dynamic ball physics, and a simple scoring system.",
-    link: "https://github.com/bean-123/Python-Pong-Game",
-  },
-  {
-    id: 8,
-    title: "Platfomer",
-    description: "A vertical-scrolling 2D platformer built with Pygame.",
-    cover: Platformer1,
-    hover: Platformer2,
-    fullpicture: Platformer1,
-    extraImages: [Platformer2, Platformer3],
-    featured: true,
-    tech: ["Python"],
-    detailedDescription:
-      "A vertical-scrolling 2D platformer built with Pygame, focused on climbing as high as possible while surviving hazards and managing limited health. Platforms are partly handcrafted and partly procedurally generated, so no two climbs feel exactly the same.",
-    link: "https://github.com/bean-123/PlatformerDemo",
-  },
-  {
-    id: 9,
     title: "Event Website",
     description: "Event website built with React and Tailwind CSS",
     cover: home,
@@ -165,6 +78,120 @@ const projectData = [
     detailedDescription:
       "Website for a fictional event, built with React and Tailwind CSS. \n The site features a clean, modern design with sections for event details, schedule, speakers, and registration. \n It demonstrates responsive design principles and interactive UI elements to create an engaging user experience. \n Site has Admin panel where you can add, edit and delete events, promote users to be admin, create blog posts and add photos to albums and in addition there is an audit log that logs what admins are doing. Fully functional registration form with validation and local storage for user data. ",
     livelink: "https://ellarion-tales-website.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "HR App",
+    description:
+      "A simple HR management React application to view, add, edit, and delete employee records.",
+    cover: hrapp,
+    hover: hrapp,
+    fullpicture: fullHrapp,
+    featured: true,
+    tech: ["React", "Tailwind"],
+    detailedDescription:
+      " A simple HR management React application to view, add, edit, and delete employee records. This project demonstrates React, React Router, Axios, and a JSON backend deployed via Render. NOTE: You need to enter the backend site first and then view the live frontend site.",
+    link: "https://github.com/bean-123/hrApp",
+    livelink: "https://hrapp-1-9wcn.onrender.com/",
+    livelink2: "https://hrapp-ukn2.onrender.com/",
+  },
+  {
+    id: 4,
+    title: "Networking Website",
+    description: "A custom WordPress project",
+    cover: networking,
+    hover: networking,
+    fullpicture: fullnetworking,
+    featured: true,
+    tech: ["Css", "Html", "Wordpress"],
+    detailedDescription:
+      "This project is a modern, responsive WordPress site created for Ohjelmistokehitysprojekti1 (Business College Helsinki school). The site allows users to explore events and communities through an interactive filtering system on the homepage.",
+    link: "https://github.com/bean-123/SoftwareDevelopment1",
+  },
+  {
+    id: 5,
+    title: "IP Address Tracker",
+    description:
+      "Web app where users can input an IP address or domain and see its location",
+    cover: iptracker,
+    hover: iptracker,
+    featured: false,
+    tech: ["Css", "Javascript"],
+    detailedDescription:
+      "This is my solution to the IP Address Tracker challenge on Frontend Mentor. The goal was to build a web app where users can input an IP address or domain and see its location and related info displayed on an interactive map.",
+    link: "https://github.com/bean-123/ip-address-tracker",
+    livelink: "https://bean-123.github.io/ip-address-tracker/",
+  },
+  {
+    id: 6,
+    title: "Pancake Factory",
+    description:
+      "Web application where users can build a pancake and manage customer orders.",
+    cover: pancake,
+    hover: pancake,
+    extraImages: [pancake2],
+    featured: false,
+    tech: ["Css", "Javascript"],
+    detailedDescription:
+      "Pancake Builder – An interactive web app that lets users design and order custom pancakes directly in the browser. Built with HTML, CSS, and JavaScript, the app features a dynamic interface where users can select a pancake base, add toppings, and see their order’s price update in real time. Orders are saved locally using LocalStorage, allowing users to track them on a dedicated orders page. Admins can view, update, or remove orders, simulating a real-life pancake shop workflow. This project highlights dynamic UI handling, form interactivity, state management, and client-side data persistence, demonstrating a combination of practical frontend development skills in a fun, creative way.",
+    link: "https://github.com/bean-123/Pancake-task",
+    livelink: "https://bean-123.github.io/Pancake-task/",
+  },
+  {
+    id: 7,
+    title: "Social Proof",
+    description:
+      "This is my solution to the Social proof section challenge on Frontend Mentor.",
+    cover: socialproof,
+    hover: socialproof,
+    featured: false,
+    tech: ["Css", "Html"],
+    detailedDescription:
+      "Frontend Mentor project that tests your layout skills on CSS, felxbox or grid.",
+    link: "https://github.com/bean-123/Social-proof-section",
+    livelink: "https://bean-123.github.io/Social-proof-section/",
+  },
+  {
+    id: 8,
+    title: "Developer Portfolio",
+    description: "Personal portfolio page",
+    cover: reactPortfolio,
+    hover: reactPortfolio,
+    fullpicture: fullportfolio,
+    extraImages: [portfolio2],
+    featured: true,
+    tech: ["React", "Tailwind", "Firebase", "Vite"],
+    detailedDescription:
+      "This is a personal portfolio website, it is built with React, Vite, and Tailwind CSS.This project reflects my passion for creative, interactive, and cleanly structured user interfaces — combining code, design, and detail into a smooth experience.",
+    link: "https://github.com/bean-123/Portfolio-task",
+    livelink: "https://bean-123.github.io/Portfolio-task/",
+  },
+  {
+    id: 9,
+    title: "Python Pong Game",
+    description: "Simple Pong Game With Python",
+    cover: pong,
+    hover: pong,
+    fullpicture: pong,
+    featured: false,
+    tech: ["Python"],
+    detailedDescription:
+      "A classic two-player Pong game built with Python and Pygame. This project recreates the timeless arcade experience with smooth paddle controls, dynamic ball physics, and a simple scoring system.",
+    link: "https://github.com/bean-123/Python-Pong-Game",
+  },
+  {
+    id: 10,
+    title: "Platfomer",
+    description: "A vertical-scrolling 2D platformer built with Pygame.",
+    cover: Platformer1,
+    hover: Platformer2,
+    fullpicture: Platformer1,
+    extraImages: [Platformer2, Platformer3],
+    featured: true,
+    tech: ["Python"],
+    detailedDescription:
+      "A vertical-scrolling 2D platformer built with Pygame, focused on climbing as high as possible while surviving hazards and managing limited health. Platforms are partly handcrafted and partly procedurally generated, so no two climbs feel exactly the same.",
+    link: "https://github.com/bean-123/PlatformerDemo",
   },
 ];
 
