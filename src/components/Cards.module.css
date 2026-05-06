@@ -8,7 +8,6 @@
 }
 
 .cards {
-  position: relative;
   margin-top: 5rem;
   display: flex;
   justify-content: center;
@@ -22,26 +21,65 @@
   z-index: 1;
 }
 
-.cardWrapper.active {
-  z-index: 1001;
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.cardInner {
+  width: 85px;
+  height: 85px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  position: relative;
+  transition: width 0.45s ease, height 0.45s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  background-color: #1e1e1e;
+}
+
+.cardInner:hover {
+  width: 300px;
+  height: 200px;
+  border-color: transparent;
+  box-shadow: 0 0 18px rgba(255, 192, 203, 0.25), 0 0 40px rgba(255, 192, 203, 0.1);
+}
+
+.cardNumber {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: opacity 0.2s ease;
+  z-index: 2;
+}
+
+.cardInner:hover .cardNumber {
+  opacity: 0;
 }
 
 .cardImage {
-  width: 160px;
-  height: 100px;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: top;
-  transition: transform 0.2s;
-  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease 0.15s;
 }
 
-.cards .cardImage:hover {
-  cursor: pointer;
-  transform: scale(1.067);
+.cardInner:hover .cardImage {
+  opacity: 1;
 }
 
 .randomtext {
-  margin-top: 10px;
+  margin-top: 32px;
   max-width: 1050px;
   text-align: justify;
 }
@@ -49,249 +87,22 @@
 .randomtextinner p {
   font-size: 11px;
   line-height: 1.8;
-  color: rgb(100, 100, 100);
+  color: rgba(255, 255, 255, 0.3);
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 400;
   margin: 0;
 }
 
-/* ---------------- Hover Boxes ---------------- */
-
-.hoverBox {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 10px;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.hoverBox.visible {
-  opacity: 1;
-}
-
-/* Individual hover box positions */
-
-.hoverBox1 {
-  bottom: 120px;
-  right: -200px;
-}
-
-.hoverBox2 {
-  top: 160px;
-  left: -400px;
-}
-
-.hoverBox3 {
-  top: -300px;
-  left: 200px;
-}
-
-.hoverBox4 {
-  top: 200px;
-  left: 120px;
-}
-
-.hoverBox5 {
-  bottom: 110px;
-  left: 280px;
-}
-
-.hoverBox6 {
-  top: 30px;
-  left: 200px;
-}
-
-/* Hover labels — floating text separate from the image */
-
-.hoverLabel {
-  position: absolute;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  font-size: 10px;
-  color: #555;
-  line-height: 1.7;
-  letter-spacing: 1.8px;
-  text-transform: uppercase;
-}
-
-.hoverLabel.visible {
-  opacity: 1;
-}
-
-.hoverLabel1 {
-  bottom: 220px;
-  left: -180px;
-  max-width: 250px;
-}
-.hoverLabel2 {
-  top: 370px;
-  left: 90px;
-  width: 200px;
-}
-.hoverLabel3 {
-  top: -210px;
-  left: -190px;
-}
-.hoverLabel4 {
-  top: 300px;
-  left: 550px;
-  width: 200px;
-}
-.hoverLabel5 {
-  bottom: 220px;
-  left: -20px;
-  width: 250px;
-}
-.hoverLabel6 {
-  top: 260px;
-  left: 15px;
-  width: 200px;
-}
-
-.hoverLabelTitle {
-  font-weight: 500;
-  font-size: 11px;
-  letter-spacing: 2.5px;
-}
-
-/* Hover images */
-
-.hoverBox img {
-  object-fit: cover;
-  object-position: top;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
-}
-
-.hoverBox1 img {
-  width: 340px;
-  height: 220px;
-}
-.hoverBox2 img {
-  width: 400px;
-  height: 260px;
-}
-.hoverBox3 img {
-  width: 400px;
-  height: 260px;
-}
-.hoverBox4 img {
-  width: 360px;
-  height: 230px;
-}
-.hoverBox5 img {
-  width: 380px;
-  height: 240px;
-}
-.hoverBox6 img {
-  width: 340px;
-  height: 220px;
-}
-
-/* ---------------- Media Queries ---------------- */
-
-@media (max-width: 1500px) {
-  /* hoverBox2: flip from left side to right side */
-  .hoverBox2 {
-    left: 100px;
-    top: 200px;
-  }
-  .hoverBox2 img {
-    width: 280px;
-    height: 180px;
-  }
-
-  .hoverLabel2 {
-    left: -120px;
-    top: 335px;
-    width: 200px;
-  }
-
-  /* hoverBox5: flip from right side to left side */
-  .hoverBox5 {
-    left: -310px;
-    bottom: 150px;
-  }
-  .hoverBox5 img {
-    width: 260px;
-    height: 170px;
-  }
-
-  /* hoverBox6: flip from right side to left side */
-  .hoverBox6 {
-    left: -90px;
-    top: 180px;
-  }
-  .hoverBox6 img {
-    width: 300px;
-    height: 190px;
-  }
-
-  /* hoverLabel1: move right so it doesn't go off left edge */
-  .hoverLabel1 {
-    left: 620px;
-    width: 200px;
-  }
-
-  /* hoverLabel4: reduce offset so it stays on screen */
-  .hoverLabel4 {
-    left: -150px;
-    width: 200px;
-  }
-
-  .hoverLabel5 {
-    left: 20px;
-  }
-
-  /* hoverLabel6: flip to left side */
-  .hoverLabel6 {
-    left: -280px;
-    bottom: 100px;
-  }
-}
-
-@media (max-width: 1020px) {
-  .cardImage {
-    width: 140px;
-    height: 90px;
-  }
-
-  .randomtext {
-    max-width: 900px;
-  }
-}
-
-@media (max-width: 920px) {
-  .cardImage {
-    width: 120px;
-    height: 80px;
-  }
-
-  .randomtext {
-    max-width: 800px;
-  }
-}
-
-@media (max-width: 785px) {
-  .cardImage {
-    width: 100px;
+@media (max-width: 660px) {
+  .cardInner {
+    width: 70px;
     height: 70px;
   }
 
-  .randomtext {
-    max-width: 700px;
-  }
-}
-
-@media (max-width: 660px) {
-  .cardImage {
-    width: 90px;
-    height: 60px;
+  .cardInner:hover {
+    width: 220px;
+    height: 146px;
   }
 
   .randomtext {
@@ -299,23 +110,14 @@
   }
 }
 
-@media (max-width: 600px) {
-  .cardImage {
-    width: 70px;
-    height: 50px;
-  }
-
-  .randomtext {
-    max-width: 500px;
-  }
-}
-
 @media (max-width: 440px) {
   .cards {
-    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 260px;
   }
 
   .randomtext {
     margin-bottom: 50px;
+    max-width: 90vw;
   }
 }

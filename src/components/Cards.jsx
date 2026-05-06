@@ -1,12 +1,12 @@
-import { useState, useMemo } from "react";
+import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import styles from "./Cards.module.css";
 import projectData from "../data/projects";
 
+
 const Cards = () => {
   const featuredProjects = projectData.filter((proj) => proj.featured);
-  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const animationValues = useMemo(
     () =>
@@ -33,13 +33,8 @@ const Cards = () => {
           return (
             <motion.div
               key={proj.id}
-              className={`${styles.cardWrapper} ${hoveredIndex === index ? styles.active : ""}`}
-              initial={{
-                opacity: 0,
-                x: startX,
-                y: startY,
-                rotate,
-              }}
+              className={styles.cardWrapper}
+              initial={{ opacity: 0, x: startX, y: startY, rotate }}
               animate={{ opacity: 1, x: 0, y: 0, rotate: 0 }}
               transition={{
                 type: "spring",
@@ -47,31 +42,19 @@ const Cards = () => {
                 damping: 15,
                 delay: index * 0.1,
               }}
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
             >
               <Link to={`/projects/${proj.id}`} className={styles.cardLink}>
-                <img
-                  src={proj.cover}
-                  alt={proj.title}
-                  className={styles.cardImage}
-                />
+                <div className={styles.cardInner}>
+                  <div className={styles.cardNumber}>
+                    {String(index + 1).padStart(2, "0")}
+                  </div>
+                  <img
+                    src={proj.cover}
+                    alt={proj.title}
+                    className={styles.cardImage}
+                  />
+                </div>
               </Link>
-
-              <div
-                className={`${styles.hoverBox} ${styles[`hoverBox${index + 1}`]} ${hoveredIndex === index ? styles.visible : ""}`}
-              >
-                <img src={proj.hover} alt={proj.title} />
-              </div>
-
-              <div
-                className={`${styles.hoverLabel} ${styles[`hoverLabel${index + 1}`]} ${hoveredIndex === index ? styles.visible : ""}`}
-              >
-                <span className={styles.hoverLabelTitle}>{proj.title}</span>
-                <br />
-                {proj.description}
-              </div>
-
             </motion.div>
           );
         })}
