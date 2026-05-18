@@ -8,10 +8,12 @@ import ProjectPage from "./components/ProjectPage";
 import BioPage from "./components/BioPage";
 import SingleProjectPage from "./components/SingleProjectPage";
 import NotFoundPage from "./components/NotFoundPage";
+import { Analytics } from "./components/Analytics";
 
 function App() {
   return (
     <BrowserRouter basename="/Portfolio">
+      <Analytics />
       <Navbar />
 
       <Routes>
